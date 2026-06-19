@@ -26,24 +26,6 @@ This project aims to provide a portable and low-power wearable health monitoring
 
 ## System Architecture
 
-The system consists of three main subsystems:
-
-### Sensor Layer
-
-- Custom ECG Acquisition Module
-- MAX30102 SpO₂ Sensor
-- MCP9808 Temperature Sensor
-
-### Processing Layer
-
-- ESP32-C3 SuperMini
-- Real-time data acquisition and processing
-
-### Communication Layer
-
-- Bluetooth Low Energy (BLE)
-- Flutter-based Android Application
-
 ![System Architecture](images/system_architecture.png)
 
 ---
@@ -94,33 +76,9 @@ Sensors are positioned to maximize signal quality and user comfort during physic
 
 ---
 
-## Power Management
-
-The wearable device is powered using a rechargeable 450 mAh Lithium Polymer (LiPo) battery.
-
-### Power Components
-
-- LiPo Battery 450 mAh
-- TP4056 Charging Module
-- MT3608 Step-Up Converter
-
-The TP4056 module provides battery charging and protection, while the MT3608 boost converter supplies a stable operating voltage for the system.
-
-![Power Management](images/power_management.png)
-
----
-
 ## Mobile Application
 
 A Flutter-based Android application was developed for real-time monitoring and visualization.
-
-### Features
-
-- ECG waveform visualization
-- SpO₂ monitoring
-- Temperature monitoring
-- Bluetooth connectivity management
-- Real-time physiological data updates
 
 ![Mobile Application](images/mobile_app.jpg)
 
@@ -130,85 +88,9 @@ A Flutter-based Android application was developed for real-time monitoring and v
 
 The hardware system was designed to ensure portability, comfort, and stable sensor placement.
 
-### Development Process
-
-- Electronic circuit design
-- Sensor integration
-- Embedded firmware development
-- Mobile application development
-- Wearable vest prototyping
-
 ![Hardware Assembly](images/hardware_assembly.jpg)
 
 ---
-
-## Firmware Development
-
-The firmware was developed using Arduino Framework for ESP32-C3.
-
-### Main Functions
-
-- Sensor acquisition
-- Signal processing
-- Bluetooth communication
-- Power management
-- Real-time monitoring
-
----
-
-## Results
-
-The prototype successfully demonstrated:
-
-- Real-time ECG acquisition
-- Real-time SpO₂ monitoring
-- Real-time temperature monitoring
-- Stable BLE communication
-- Portable wearable implementation
-
-### ECG Monitoring Example
-
-![ECG Monitoring](images/ecg_monitoring.jpg)
-
-### Final Prototype
-
-![Prototype](images/final_prototype.jpg)
-
----
-
-## Applications
-
-Potential applications include:
-
-- Athlete health monitoring
-- Sports science research
-- Fitness tracking
-- Rehabilitation monitoring
-- Remote physiological monitoring
-
----
-
-## Technologies Used
-
-### Embedded Systems
-
-- ESP32-C3 SuperMini
-- Arduino IDE
-- C/C++
-
-### Communication
-
-- Bluetooth Low Energy (BLE)
-
-### Biomedical Instrumentation
-
-- ECG Monitoring
-- SpO₂ Monitoring
-- Temperature Monitoring
-
-### Mobile Development
-
-- Flutter
 
 ## Disclaimer
 
