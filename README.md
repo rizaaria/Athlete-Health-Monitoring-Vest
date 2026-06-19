@@ -1,6 +1,6 @@
 # Athlete Health Monitoring Vest
 
-![Cover](images/cover.jpg)
+![Cover](images/result1.jpeg)
 
 ## Overview
 
@@ -88,7 +88,7 @@ A Flutter-based Android application was developed for real-time monitoring and v
 
 The hardware system was designed to ensure portability, comfort, and stable sensor placement.
 
-![Hardware Assembly](images/hardware_assembly.jpg)
+![Hardware Assembly](result/result2.jpeg)
 
 ---
 
