@@ -80,7 +80,7 @@ Sensors are positioned to maximize signal quality and user comfort during physic
 
 A Flutter-based Android application was developed for real-time monitoring and visualization.
 
-![Mobile Application](images/mobile_app.jpg)
+![Mobile Application](images/mobile_app.png)
 
 ---
 
