@@ -1,6 +1,6 @@
 # Athlete Health Monitoring Vest
 
-![Cover](images/result1.jpeg)
+![Cover](result/result1.jpeg)
 
 ## Overview
 
