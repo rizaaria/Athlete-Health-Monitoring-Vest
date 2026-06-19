@@ -1,13 +1,14 @@
-```markdown
 # Athlete Health Monitoring Vest
+
+![Cover](images/cover.jpg)
 
 ## Overview
 
-The Athlete Health Monitoring Vest is an IoT-based wearable system designed to monitor physiological parameters of athletes during training and physical activities.
+The Athlete Health Monitoring Vest is an IoT-based wearable system designed to monitor athletes' physiological parameters during training and physical activities.
 
 The system utilizes an ESP32-C3 SuperMini microcontroller to acquire Electrocardiography (ECG), blood oxygen saturation (SpO₂), and body temperature data. Sensor data are transmitted wirelessly via Bluetooth Low Energy (BLE) to an Android application for real-time monitoring and visualization.
 
-The project aims to provide a portable and low-power wearable health monitoring solution that supports athlete performance assessment and physiological condition monitoring.
+This project aims to provide a portable and low-power wearable health monitoring solution for athlete performance assessment and physiological monitoring.
 
 ---
 
@@ -17,10 +18,9 @@ The project aims to provide a portable and low-power wearable health monitoring 
 - Real-time SpO₂ monitoring
 - Real-time body temperature monitoring
 - Bluetooth Low Energy (BLE) communication
-- Android application for data visualization
+- Android application for real-time visualization
 - Portable battery-powered operation
 - Lightweight wearable vest design
-- Real-time physiological data transmission
 
 ---
 
@@ -37,7 +37,7 @@ The system consists of three main subsystems:
 ### Processing Layer
 
 - ESP32-C3 SuperMini
-- Signal acquisition and processing
+- Real-time data acquisition and processing
 
 ### Communication Layer
 
@@ -70,7 +70,7 @@ ECG signals are acquired using a custom-developed ECG acquisition module.
 
 Related Repository:
 
-https://github.com/rizaaria/Biopotential-Signal-Acquisition-ESP32
+https://github.com/rizaaria/Biopotential-Signal-Acquisition-EXG
 
 ### SpO₂ Monitoring
 
@@ -98,13 +98,13 @@ Sensors are positioned to maximize signal quality and user comfort during physic
 
 The wearable device is powered using a rechargeable 450 mAh Lithium Polymer (LiPo) battery.
 
-### Power System Components
+### Power Components
 
 - LiPo Battery 450 mAh
 - TP4056 Charging Module
 - MT3608 Step-Up Converter
 
-The TP4056 module provides charging and battery protection, while the MT3608 boost converter supplies a stable voltage to the system.
+The TP4056 module provides battery charging and protection, while the MT3608 boost converter supplies a stable operating voltage for the system.
 
 ![Power Management](images/power_management.png)
 
@@ -144,12 +144,12 @@ The hardware system was designed to ensure portability, comfort, and stable sens
 
 ## Firmware Development
 
-The firmware was developed using the Arduino Framework for ESP32-C3.
+The firmware was developed using Arduino Framework for ESP32-C3.
 
 ### Main Functions
 
 - Sensor acquisition
-- Data processing
+- Signal processing
 - Bluetooth communication
 - Power management
 - Real-time monitoring
@@ -170,9 +170,9 @@ The prototype successfully demonstrated:
 
 ![ECG Monitoring](images/ecg_monitoring.jpg)
 
-### Prototype
+### Final Prototype
 
-![Prototype](images/vest_prototype.jpg)
+![Prototype](images/final_prototype.jpg)
 
 ---
 
@@ -210,34 +210,6 @@ Potential applications include:
 
 - Flutter
 
----
-
-## Future Development
-
-- Cloud-based data storage
-- AI-based fatigue analysis
-- Performance analytics dashboard
-- Multi-athlete monitoring
-- Long-term health tracking
-
----
-
-## Author
-
-**Riza Aria Komara**
-
-Biomedical Engineering  
-Telkom University
-
-GitHub:
-https://github.com/rizaaria
-
-LinkedIn:
-https://linkedin.com/in/riza-aria-komara
-
----
-
 ## Disclaimer
 
 This project was developed for educational, research, and prototype purposes. It is not intended to replace certified medical devices or professional medical diagnosis.
-```
